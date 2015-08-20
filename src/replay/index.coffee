@@ -74,6 +74,9 @@ HTTPS.get = (options, callback)->
 # Redirect HTTP requests to 127.0.0.1 for all hosts defined as localhost
 original_lookup = DNS.lookup
 DNS.lookup = (domain, options, callback)->
+  if !domain
+    domain = '127.0.0.1'
+
   if typeof(options) == "function"
     [family, callback] = [4, options]
     options = family
