@@ -2,7 +2,11 @@
   "name": "replay",
   "description": "When API testing slows you down: record and replay HTTP responses like a boss",
   "version": "2.0.6",
-  "author": "Assaf Arkin <assaf@labnotes.org> (http://labnotes.org/)",
+  "author": {
+    "name": "Assaf Arkin",
+    "email": "assaf@labnotes.org",
+    "url": "http://labnotes.org/"
+  },
   "keywords": [
     "test",
     "testing",
@@ -22,7 +26,7 @@
     "build": "coffee --bare --compile --output lib/replay src/replay/*.coffee",
     "prepublish": "coffee --bare --compile --output lib/replay src/replay/*.coffee",
     "postpublish": "rm -rf lib",
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha"
   },
   "dependencies": {
     "debug": "^2.0",
@@ -38,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/assaf/node-replay"
+    "url": "git+https://github.com/assaf/node-replay.git"
   },
   "bugs": {
     "url": "https://github.com/assaf/node-replay/issues"
@@ -48,5 +52,27 @@
       "type": "MIT",
       "url": "https://github.com/assaf/node-replay/blob/master/MIT-LICENSE"
     }
-  ]
+  ],
+  "gitHead": "e8dd56f2f796b46b886b57f064cfe7dd0ef0c7f5",
+  "homepage": "https://github.com/assaf/node-replay#readme",
+  "_id": "replay@2.0.6",
+  "_shasum": "d2acde20098ca4a5730ee058ee1942d2dd57e48c",
+  "_from": "replay@^2.0.6",
+  "_npmVersion": "2.8.4",
+  "_nodeVersion": "1.7.1",
+  "_npmUser": {
+    "name": "assaf",
+    "email": "assaf@labnotes.org"
+  },
+  "dist": {
+    "shasum": "d2acde20098ca4a5730ee058ee1942d2dd57e48c",
+    "tarball": "http://registry.npmjs.org/replay/-/replay-2.0.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "assaf",
+      "email": "assaf@labnotes.org"
+    }
+  ],
+  "_resolved": "https://registry.npmjs.org/replay/-/replay-2.0.6.tgz"
 }
